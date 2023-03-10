@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #222222d8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 15px;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    margin-left: 10px;
+}
+.bank{
+    margin: 10px;
+    width: 100px;
+    height: 20px;
+}
+.vm{
+    margin: 10px;
+    width: 100px;
+}
+.cardnumber{
+    display: flex;
+    margin: 5px;
+}
+.digits{
+     width: 120px;
+     margin: 5px;
+     height: 20px;
+}
+.nameandsurname{
+    margin: 10px;
+}
+.namesur{
+    height: 20px;
+}
+.validity{
+    display: flex;
+    margin: 10px;
+}
+.val{
+    width: 15px;
+    height: 20px;
+}
+.sl{
+  font-size: 20px;
+}
+.CVV{
+    margin: 10px;
+    width: 23px;
+    height: 20px;
+}
+.buttons{
+    display: flex;
+}
+.subut{
+    margin-left: 10px;
+    height: 25px;
+    width: 100px;
+}
+.reset{
+    margin-left: 10px;
+    height: 25px;
+    width: 100px;
+}
+.card{
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    background-color: #222;
+}
+th{
+    width: 300px;
+    border: 1px solid black;   
+}

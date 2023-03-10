@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/7886/bank-terminal.svg" type="image/svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Bank</title>
+</head>
+<body>
+    <main>
+    <form id="for">
+        <div class="text">Выберите свой банк</div>
+        <select class="bank" name="bnk">
+            <option>Tinkoff</option>
+            <option>SberBank</option>
+            <option>AlfaBank</option>
+            <option>VTB</option>
+        </select>
+        <div class="text">Выберите платежную систему</div>
+        <select name="vm" class="vm">
+            <option>Visa</option>
+            <option>Mastercard</option>
+        </select>
+        <div class="text">Номер карты</div>
+        <div class="cardnumber">
+            <input type="text" name="dig" class="digits" placeholder="0000000000000000" maxlength=16 required>
+        </div>
+        <div class="text">Ваши данные</div>
+        <div class="nameandsurname">
+            <input type="text" name="s" class="namesur" placeholder="Иванов" required>
+            <input type="text" name="n" class="namesur" placeholder="Иван" required>
+        </div>
+        <div class="text">Срок годности</div>
+        <div class="validity">
+            <input type="text" name="vl1" class="val" placeholder="00" maxlength=2 required>
+            <div class="sl">/</div>
+            <input type="text" name="vl2" class="val" placeholder="00" maxlength=2 required>
+        </div>
+        <div class="text">CVV код</div>
+        <input type="text" name="cvv" class="CVV" placeholder="000" maxlength=3 required>
+        <div class="buttons">
+            <button type="submit" class="subut">Отправить</button>
+            <button type="reset" class="reset">Очистить</button>
+        </div>
+        
+    </form>
+    <div class="card">
+    </div>
+</main>
+    <table class="tab">
+        <tr>
+            <th>Банк</th>
+            <th>Платежная система</th>
+            <th>Номер карты</th>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Срок годности</th>
+            <th>CVV</th>
+        </tr>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
